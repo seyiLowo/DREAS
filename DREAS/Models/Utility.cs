@@ -13,5 +13,29 @@ namespace DREAS.Models
             Pending,
             Approved
         }
+        public enum RoleType
+        {
+            Client,
+            Agent,
+            LandLord,
+            Insurance,
+            Legal,
+            Artisan
+        }
+
+        public enum PaymentStatus
+        {
+            Pending,
+            Failed,
+            Successful
+        }
+
+        public enum ServiceType
+        {
+            Property,
+            Moving,
+            Legal,
+            Insurance
+        }
     }
 }

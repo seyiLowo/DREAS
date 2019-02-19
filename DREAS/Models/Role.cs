@@ -5,14 +5,10 @@ using System.Threading.Tasks;
 
 namespace DREAS.Models
 {
-    enum Roles
+    public class Role: BaseModel
     {
-        client,
-        agent,
-        landlord,
-        insurance,
-        digitalLegal,
-        artisan
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
 

@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static DREAS.Models.Utility;
 
 namespace DREAS.Models
 {
-    class Feedback : BaseModel
+    public class Feedback : BaseModel
     {
         public Guid clientID;
         public Guid serviceProviderID;
@@ -13,31 +14,31 @@ namespace DREAS.Models
         public Property PropertyID { get; set; }
         public string FeedbackMessage { get; set; }
 
-        private Roles roles;
+        private RoleType roleTypes;
 
 
-        public Feedback(Roles roles)
+        public Feedback(RoleType roleType)
         {
-            this.roles = roles;
+            this.roleTypes = roleType;
 
-            switch (roles)
+            switch (roleType)
             {
-                case Roles.client:
+                case RoleType.Client:
                     clientID = ID;
                     break;
-                case Roles.agent:
+                case RoleType.Agent:
                     serviceProviderID = ID;
                     break;
-                case Roles.landlord:
+                case RoleType.LandLord:
                     serviceProviderID = ID;
                     break;
-                case Roles.insurance:
+                case RoleType.Insurance:
                     serviceProviderID = ID;
                     break;
-                case Roles.digitalLegal:
+                case RoleType.Legal:
                     serviceProviderID = ID;
                     break;
-                case Roles.artisan:
+                case RoleType.Artisan:
                     serviceProviderID = ID;
                     break;
                 default:

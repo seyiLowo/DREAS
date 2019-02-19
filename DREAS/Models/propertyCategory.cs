@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DREAS.Models
 {
-    public class propertyCategory: BaseModel
+    public class PropertyCategory: BaseModel
     {
         public string Duplex { get; set; }
         public String HalfDuplex { get; set; }
