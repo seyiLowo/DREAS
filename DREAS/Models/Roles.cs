@@ -5,7 +5,14 @@ using System.Threading.Tasks;
 
 namespace DREAS.Models
 {
-    public class Roles : BaseModel
+    enum Roles
     {
+        client,
+        agent,
+        landlord,
+        insurance,
+        digitalLegal,
+        artisan
     }
 }
+
