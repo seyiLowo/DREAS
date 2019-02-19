@@ -13,7 +13,7 @@ namespace DREAS.Models
         public string Password { get; set; }
         public string  Email { get; set; }
         public int ReferalCode { get; set; }
-        [ForeignKey("Address")]  // It i not necessary because EF convention will handle for us
+        [ForeignKey("Address")]  // It is not necessary because EF convention will handle that for us
         public Guid AddressID { get; set; }
         public Address Address { get; set; }
     }
