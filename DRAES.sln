@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DREAS", "WebApplication1\DREAS.csproj", "{C08A21D0-E19C-4002-8CF6-8D297A02A902}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C08A21D0-E19C-4002-8CF6-8D297A02A902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08A21D0-E19C-4002-8CF6-8D297A02A902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08A21D0-E19C-4002-8CF6-8D297A02A902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08A21D0-E19C-4002-8CF6-8D297A02A902}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08053203-DB6B-45A6-B89F-4D147702B790}
+	EndGlobalSection
+EndGlobal
