@@ -7,11 +7,11 @@ namespace DREAS.Models
 {
     public class Settlement: BaseModel
     {
-        public Guid UserId { get; set; }
+        public Guid UserID { get; set; }
         public DateTime SettlementDate { get; set; }
         public decimal SettlementAmount { get; set; }
         public string SettlementCategory { get; set; }
-        public Guid RoleId { get; set; }
+        public Guid RoleID { get; set; }
 
 
     }
