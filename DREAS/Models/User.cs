@@ -10,9 +10,7 @@ namespace DREAS.Models
     {
         public string UserName { get; set; }
         public string PhoneNumber { get; set; }
-        [ForeignKey("Address")]
-        public Guid AddressId { get; set; }
         public string Email { get; set; }
-        public Address Address { get; set; }
+        public List<Role> Roles { get; set; }
     }
 }
