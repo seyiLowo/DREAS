@@ -8,7 +8,7 @@ namespace DREAS.Models
     public class propertyList: BaseModel
     {
         public Guid PropertyListID { get; set; }
-        public Guid PropertyId { get; set; }
-        public Guid UserId { get; set; }
+        public Guid PropertyID { get; set; }
+        public Guid UserID { get; set; }
     }
 }
