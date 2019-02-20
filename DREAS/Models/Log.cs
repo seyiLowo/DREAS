@@ -10,8 +10,7 @@ namespace DREAS.Models
         public User UserFullName { get; set; }
         public string Message { get; set; }
         public string IPAddress { get; set; }
-        public Guid RoleId { get; set; }
+        public Guid RoleID { get; set; }
         public string LocalIPAddress { get; set; }
-        public string OrganisationID { get; set; }
     }
 }
