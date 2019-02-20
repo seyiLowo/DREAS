@@ -7,8 +7,8 @@ namespace DREAS.Models
 {
     public class Transaction: BaseModel
     {
-        public Guid TransactionId { get; set; }
-        public Guid PropertyId { get; set; }
+        public Guid TransactionID { get; set; }
+        public Guid PropertyID { get; set; }
         public Guid TransactionReferenceNum { get; set; }
     }
 }

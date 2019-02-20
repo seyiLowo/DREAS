@@ -7,7 +7,7 @@ namespace DREAS.Models
 {
     public class Promotion: BaseModel
     {
-        public Guid PromotionId { get; set; }
+        public Guid PromotionID { get; set; }
         public DateTime PromotionDate { get; set; }
         public string  PromotionDescription { get; set; }
         public string PromotionName { get; set; }

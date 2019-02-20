@@ -7,9 +7,11 @@ namespace DREAS.Models
 {
     public class Log: BaseModel
     {
-        public User Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
+        public User UserFullName { get; set; }
+        public string Message { get; set; }
+        public string IPAddress { get; set; }
         public Guid RoleId { get; set; }
+        public string LocalIPAddress { get; set; }
+        public string OrganisationID { get; set; }
     }
 }

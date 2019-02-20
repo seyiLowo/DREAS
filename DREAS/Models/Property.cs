@@ -10,7 +10,7 @@ namespace DREAS.Models
     {
         public PropertyStatus Status { get; set; }
         public decimal Price { get; set; }
-        public Guid OwnerId { get; set; }
+        public Guid OwnerID { get; set; }
         public string Name { get; set; }
         public float Latitude { get; set; }
         public float Longitude { get; set; }
