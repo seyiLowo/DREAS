@@ -11,7 +11,12 @@ namespace DREAS.Models
         public Guid clientID;
         public Guid serviceProviderID;
 
-        public Property PropertyID { get; set; }
+
+        public Property Property { get; set; }
+        public Guid PropertyID { get; set; }
+
+        public User User { get; set; }
+        public Guid UserID { get; set; }
         public string FeedbackMessage { get; set; }
 
         private RoleType roleTypes;
@@ -24,22 +29,22 @@ namespace DREAS.Models
             switch (roleType)
             {
                 case RoleType.Client:
-                    clientID = ID;
+                    clientID = UserID;
                     break;
                 case RoleType.Agent:
-                    serviceProviderID = ID;
+                    serviceProviderID = UserID;
                     break;
                 case RoleType.LandLord:
-                    serviceProviderID = ID;
+                    serviceProviderID = UserID;
                     break;
                 case RoleType.Insurance:
-                    serviceProviderID = ID;
+                    serviceProviderID = UserID;
                     break;
                 case RoleType.Legal:
-                    serviceProviderID = ID;
+                    serviceProviderID = UserID;
                     break;
                 case RoleType.Artisan:
-                    serviceProviderID = ID;
+                    serviceProviderID = UserID;
                     break;
                 default:
                     break;
