@@ -1,6 +1,6 @@
 ﻿namespace DREAS.Models
 {
-    public class Address: BaseModel
+    public class Address
     {
         public string HouseNo { get; set; }
         public string StreetName { get; set; }

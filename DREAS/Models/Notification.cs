@@ -5,9 +5,12 @@ using System.Threading.Tasks;
 
 namespace DREAS.Models
 {
-    public class Referal: BaseModel
+    public class Notification: BaseModel
     {
+        public Contact Email { get; set; }
+        public int PropertyID { get; set; }
+        public Enquiry Message { get; set; }
         public Guid UserID { get; set; }
-        public int ReferalCode { get; set; }
+
     }
 }

@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static DREAS.Models.Utility;
 
 namespace DREAS.Models
 {
-    public class propertyList: BaseModel
+    public class PropertyList: BaseModel
     {
-        public Guid PropertyListId { get; set; }
-        public Guid PropertyId { get; set; }
-        public Guid UserId { get; set; }
+        public  PropertyCategory PropertyCategory { get; set; }
+        public Guid PropertyID { get; set; }
+        public PropertyType Type { get; set; }
+        public Guid UserID { get; set; }
     }
 }
