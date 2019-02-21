@@ -11,10 +11,8 @@ namespace DREAS.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Password { get; set; }
-        public string  Email { get; set; }
+        public Contact  ContactDetails { get; set; }
         public int ReferalCode { get; set; }
-        [ForeignKey("Address")]  // It is not necessary because EF convention will handle that for us
-        public Guid AddressID { get; set; }
-        public Address Address { get; set; }
+
     }
 }

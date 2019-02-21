@@ -7,7 +7,7 @@ namespace DREAS.Models
 {
     public class Referal: BaseModel
     {
-        public string ReferalID { get; set; }
+        public Guid UserID { get; set; }
         public int ReferalCode { get; set; }
     }
 }

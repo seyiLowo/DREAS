@@ -7,9 +7,10 @@ namespace DREAS.Models
 {
     public class Enquiry: BaseModel
     {
-        public Guid EnquirerID { get; set; }
+        public Guid PropertyID { get; set; }
         public string Email { get; set; }
         public string Message { get; set; }
+        public string FAQ { get; set; }
 
     }
 }

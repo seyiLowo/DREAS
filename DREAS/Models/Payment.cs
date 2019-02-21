@@ -9,7 +9,7 @@ namespace DREAS.Models
     public class Payment: BaseModel
     {
         public PaymentStatus Status { get; set; }
-        public DateTime PaymentDate { get; set; }
+        public DateTime Date { get; set; }
         public Guid UserID { get; set; }
         public decimal Amount { get; set; }
         public Guid ServiceID { get; set; }

@@ -37,5 +37,25 @@ namespace DREAS.Models
             Legal,
             Insurance
         }
+
+        public enum ActionType
+        {
+            Created,
+            Updated,
+            Read,
+            Deleted
+        }
+
+        public enum ActionStatus
+        {
+            Failed,
+            Successful
+        }
+
+        public enum PropertyType
+        {
+            Rent,
+            Sale
+        }
     }
 }
