@@ -7,9 +7,8 @@ namespace DREAS.Models
 {
     public class Settlement: BaseModel
     {
-        /// <summary>
-        /// beneficiary: the person receiving payment
-        /// </summary>
+        //beneficiary: the person receiving payment
+       
         public Guid UserID { get; set; }
         public DateTime Date { get; set; }
         public decimal Amount { get; set; }

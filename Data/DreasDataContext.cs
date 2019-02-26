@@ -30,17 +30,9 @@ namespace Data
         public DbSet<UserProfile> UserProfiles  { set; get; }
 
 
-
-
-
-
-
-
-
-
-    public DreasDataContext(DbContextOptions options):base(options)            
-        {
-            this.Database.EnsureCreated();
-        }
+        public DreasDataContext(DbContextOptions options):base(options)            
+            {
+                this.Database.EnsureCreated();
+            }
     }
 }

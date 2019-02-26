@@ -17,9 +17,11 @@ namespace DREAS.Models
 
         public User User { get; set; }
         public Guid UserID { get; set; }
+
         public string FeedbackMessage { get; set; }
 
         private RoleType roleTypes;
+        public List<Role> Roles { get; set; }
 
 
         public Feedback(RoleType roleType)
