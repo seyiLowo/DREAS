@@ -55,7 +55,26 @@ namespace DREAS.Models
         public enum PropertyType
         {
             Rent,
-            Sale
+            Sale,
+            Lease
+        }
+        public enum UserType
+        {
+            Company,
+            Group,
+            Individual
+        }
+        public enum DocumentType
+        {
+            Legal
+        }
+        public enum RiskType
+        {
+            Fire,
+            HouseHold,
+            Burgulary,
+            Bond
+
         }
     }
 }
