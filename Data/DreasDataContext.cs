@@ -6,33 +6,35 @@ using System.Text;
 
 namespace Data
 {
-    public class DreasDataContext : DbContext
+
+   Public class DreasDataContext : DbContext
     {
-        public DbSet<User> Users { set; get; }
-        public DbSet<Address> Addresses { set; get; }
-        public DbSet<BaseModel> BaseModels {set; get;}
-        public DbSet<CompanyProfile> CompanyProfiles { set; get;}
-        public DbSet<Contact> Contacts {set; get;}
-        public DbSet<Enquiry> Enquiries  {set; get;}
-        public DbSet<Feedback>  FeedBacks{set; get;}
-        public DbSet<Log> Logs  {set; get;}
-        public DbSet<Notification> Notifications  {set; get;}
-        public DbSet<Payment> Payments {set; get;}
-        public DbSet<Promotion> Promotions  {set; get;}
-        public DbSet<Property> Properties  {set; get;}
-        public DbSet<PropertyCategory> propertyCategories  {set; get;}
-        public DbSet<PropertyList> PropertyLists  { set; get; }
-        public DbSet<Referal> Referals  { set; get; }
-        public DbSet<Role> Roles  { set; get; }
-        public DbSet<Service> Services  { set; get; }
-        public DbSet<Settlement> Settlements  { set; get; }
-        public DbSet<Transaction> Transactions  { set; get; }
-        public DbSet<UserProfile> UserProfiles  { set; get; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<BaseModel> BaseModels { get; set; }
+        public DbSet<CompanyProfile> CompanyProfiles{get; set;}
+        public DbSet<Contact> Contacts{get; set;}
+        public DbSet<Enquiry> Enquiries{get; set;}
+        public DbSet<Feedback> Feedbacks{get; set;}
+        public DbSet<Log> Logs{get; set;}
+        public DbSet<Notification> Notifications{get; set;}
+        public DbSet<Payment> Payments{get; set;}
+        public DbSet<Promotion> Promotions{get; set;}
+        public DbSet<Property> Property{get; set;}
+        public DbSet<PropertyCategory> PropertyCategories{get; set;}
+        public DbSet<PropertyList> PropertyLists{get; set;}
+        public DbSet<Referal> Referals{get; set;}
+        public DbSet<Role> Roles{get; set;}
+        public DbSet<Service> Services{get; set;}
+        public DbSet<Settlement> Settlements{get; set;}
+        public DbSet<Transaction> Transactions{get; set;}
+        public DbSet<UserProfile> UserProfiles{get; set;}
 
 
         public DreasDataContext(DbContextOptions options):base(options)            
-            {
-                this.Database.EnsureCreated();
-            }
+          {
+            this.Database.EnsureCreated();
+          }
     }
+
 }

@@ -12,5 +12,6 @@ namespace DREAS.Models
         public Guid EntryBy { get; set; }
         public DateTime ModifiedDate { get; set; }
         public Guid ModifiedBy { get; set; }
+        public Boolean IsDeleted { get; set; }
     }
 }
