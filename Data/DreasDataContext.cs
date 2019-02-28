@@ -6,13 +6,9 @@ using System.Text;
 
 namespace Data
 {
-    class DreasDataContext : DbContext
-    {
-        public DreasDataContext(DbContextOptions<DreasDataContext> Options)
-            : base(Options)
-        {
 
-        }
+   Public class DreasDataContext : DbContext
+    {
         public DbSet<User> Users { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<BaseModel> BaseModels { get; set; }
@@ -35,15 +31,10 @@ namespace Data
         public DbSet<UserProfile> UserProfiles{get; set;}
 
 
+        public DreasDataContext(DbContextOptions options):base(options)            
+          {
+            this.Database.EnsureCreated();
+          }
+    }
 
-
-
-
-
-
-
-
-
-
-}
 }
