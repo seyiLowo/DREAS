@@ -7,6 +7,7 @@
         public Contact Contact { get; set; }
         public int ReferalCode { get; set; }
         public string BVN { get; set; }
+        public string NIN { get; set; }
 
     }
 }
